@@ -1,0 +1,48 @@
+// main: ../style.less
+
+button {
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Gotham Pro normal';
+    cursor: pointer;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 2.6rem;
+}
+
+.header__button-red {
+    background-color: #9E0B37B3;
+    padding: 1rem 1.5rem;
+    border-radius: 2.5rem;
+    box-shadow: inset 4px 4px 6px #FFFFFF80,
+    4px 4px 20px #DF5017CC;
+
+    transition: background .2s ease;
+
+    &:hover {
+        background: #8b0a31b3;
+    }
+}
+
+
+.diff_article-button {
+    cursor: pointer;
+    position: relative;
+    width: 2.8rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #DF5017, #F9CB74);
+
+    box-shadow: inset 2px 2px 3px white, 2px 2px 10px #DF5017;
+    ;
+}
+
+.diff_article-button img {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}

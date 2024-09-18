@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.diff_articles {
+    margin-left: 1.25rem;
+    width: 220px;
+}
+
+.diff_article {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: .6rem;
+}
+
+.diff_article::before {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #17142200, #171422ef);
+    z-index: 1;
+}
+
+.diff_article-first {
+    background-image: url('../imgs/diff_article_first.jpg');
+}
+
+.diff_article-second {
+    background-image: url('../imgs/diff_article_second.jpg');
+}
+
+.diff_article-third {
+    background-image: url('../imgs/diff_article_third.jpg');
+}
+
+.diff_article-fourth {
+    background-image: url('../imgs/diff_article_fourth.jpg');
+}
+
+.diff_article-info {
+    position: absolute;
+    bottom: 1rem;
+    margin: 0 0.4rem;
+    z-index: 100;
+    text-align: center;
+
+    display: flex;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10;
+    border-radius: 1.5rem;
+    height: 2.5rem;
+
+    line-height: 1.2rem;
+}
+
+.diff_article-info a {
+    font-size: .56rem;
+    font-family: 'Gotham Pro black';
+
+}
+
+.diff_article-info span {
+    font-size: .81rem;
+    line-height: 1.2rem;
+}

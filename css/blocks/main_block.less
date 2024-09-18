@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.main__block {
+    height: 648px;
+    position: relative;
+}
+
+.main__block-mask-red, .main__block-mask-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 648px;
+    width: 80%;
+}
+
+.main__block-mask-black {
+    background: linear-gradient(to right, #282533, #282533, #282533bb, #28253300);
+    z-index: -3;
+}
+
+.main__block-mask-red {
+    background: linear-gradient(to bottom right, #DF5017, #df50176f, #df50171d, #df501700);
+    z-index: -1;
+}
+
+.main__block-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+}
+
+.main__block-title {
+    width: 100%;
+    height: 648px;
+    display: flex;
+    align-items: center;
+
+    font-size: 3.13rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}

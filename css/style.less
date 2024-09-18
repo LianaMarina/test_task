@@ -1,0 +1,52 @@
+// compress: true
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @black;
+    font-family: 'Gotham Pro normal';
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/button.less";
+@import "blocks/main_block.less";
+@import "blocks/article_block.less";
+@import "blocks/diff_articles.less";
+@import "blocks/img_parts.less";
+@import "blocks/slider_block.less";
+
+@font-face {
+    font-family: 'Gotham Pro light';
+    src: url("../fonts/gothampro_light.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro normal';
+    src: url("../fonts/gothampro_medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Pro black';
+    src: url("../fonts/gothampro_black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
